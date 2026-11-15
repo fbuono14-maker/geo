@@ -3,20 +3,29 @@
 Página web educativa de Geografía sobre **Recursos estratégicos: petróleo y agua**.
 
 ## Incluye
-- Diseño responsive tipo landing educativa.
-- Las 6 preguntas solicitadas con respuestas.
-- Planisferio interactivo con Leaflet + OpenStreetMap.
-- Marcadores de regiones relevantes para petróleo y agua dulce.
-- Comparación, conflictos geopolíticos y sostenibilidad.
+
+- Las **6 preguntas solicitadas** con respuestas completas.
+- Planisferio interactivo con referencias de petróleo y agua dulce.
+- Comparación entre disponibilidad, renovación y usos.
+- Un conflicto relacionado con el petróleo y otro relacionado con el agua.
+- Problemas ambientales de la explotación petrolera y medidas responsables.
 - Imágenes y fuentes externas.
-- Sin backend y sin API key.
-- Preparada para GitHub Pages.
+- Diseño responsive para computadora y celular.
+- Sitio estático, sin backend ni API propia.
 
-## Inspiración
-La estructura visual e interactiva toma como referencia ideas de proyectos educativos y de exploración geográfica de código abierto, especialmente [World Explorer](https://github.com/Endorrfin/world-explorer) y [Earth Atlas](https://github.com/cppiod/earth-atlas). No se copiaron sus archivos ni su código; la interfaz, contenidos y estructura fueron implementados para este proyecto.
+## Publicación en GitHub Pages
 
-## Ejecutar
-Como es una web estática, se puede abrir `index.html` directamente o usar:
+El archivo `index.html` está en la raíz del repositorio y el workflow de `.github/workflows/pages.yml` está preparado para publicar el sitio mediante GitHub Pages.
+
+**Importante:** este repositorio debe ser **público si la cuenta usa GitHub Free**. GitHub Pages permite repositorios privados para planes Pro/Team/Enterprise, pero no para GitHub Free. Una vez que el repositorio sea público, en **Settings → Pages → Build and deployment → Source** se debe seleccionar **GitHub Actions**. Después de eso, el workflow de Pages publicará el sitio.
+
+URL prevista del proyecto:
+
+`https://fbuono14-maker.github.io/geo/`
+
+## Ejecutar localmente
+
+Como es una web estática, también se puede abrir `index.html` directamente o ejecutar:
 
 ```bash
 python -m http.server 4173
@@ -24,10 +33,12 @@ python -m http.server 4173
 
 Luego abrir `http://localhost:4173`.
 
-## Publicar
-En GitHub: Settings → Pages → seleccionar la rama `main` y la carpeta raíz, o configurar GitHub Actions.
+## Inspiración
+
+La estructura visual e interactiva toma como referencia ideas de proyectos educativos y de exploración geográfica de código abierto, especialmente World Explorer y Earth Atlas. No se copiaron sus archivos ni su código.
 
 ## Fuentes
+
 - https://www.iea.org/
 - https://www.unwater.org/
 - https://www.worldbank.org/en/topic/water
